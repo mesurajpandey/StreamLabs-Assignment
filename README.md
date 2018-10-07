@@ -64,6 +64,41 @@ server by sending --state command to the server. The server will reply with the 
 it is in. But it will only reply the state information related to this client.
 
 
-### Connect using two NamedPipeClients ###
+### Connecting to NamedPipeServer by two NamedPipeClients ###
+ - Run NamedPipeClient.exe in two terminals
+ - Run NamedPipeServer.exe in another third terminal
+ - Send a --msg or --num command to the NamedPipeServer from one of the NamedPipeClient
+ - And again, send a --msg or --num command to the NamedPipeServer from another NamedPipeClient
+ - Now, when you do --state, the server replies with the corresponding changes to its state done by the 
+ corresponding clients
+
+
+### Create an Employee Object to NamedPipeServer by two NamedPipeClients ###
+The server has a custom class (Employee Class) whose objects can be created by the clients.
+The Employee class has the following attributes:
+ ```
+  name: string
+  address: string
+  company_name: string
+  mobile_num: string
+  salary: double
+ ```
+
+The Employee class has the following methods which can be called by the client using a particular Employee Object.
+
+```
+getName()
+setName()
+getAddress()
+setAddress()
+getCompanyName()
+setCompnayName()
+getMobileNum()
+setMobileNum()
+getSalary()
+setSalary()
+```
+
+
 
 
