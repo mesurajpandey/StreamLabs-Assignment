@@ -276,7 +276,7 @@ int _tmain(int argc, TCHAR *argv[])
 		if (user_input == "x") {
 			return 0;
 		}
-		else if (user_input == "c") {
+		else if (user_input == "c") { 
 		}
 		else {
 			std::cout << "Invalid input. Terminating\n";

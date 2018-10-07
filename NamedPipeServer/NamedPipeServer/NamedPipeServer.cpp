@@ -82,8 +82,8 @@ int _tmain(VOID)
 	HANDLE hPipe = INVALID_HANDLE_VALUE, hThread = NULL;
 	LPTSTR pipeName = TEXT("\\\\.\\pipe\\mynamedpipe");
 
-	while (true)
-	{
+	while (true) 
+	{ 
 		_tprintf(TEXT("\n********* Named Pipe Server Started on %s ***********\n"), pipeName);
 		hPipe = CreateNamedPipe(pipeName, PIPE_ACCESS_DUPLEX,
 			PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT, PIPE_UNLIMITED_INSTANCES, BUFSIZE, BUFSIZE, 0, NULL);
