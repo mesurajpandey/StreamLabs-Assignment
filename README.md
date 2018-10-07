@@ -2,7 +2,7 @@
 This is an assignment provided by StreamLabs. This code is specially written 
 for an Windows Operating system. You need CMake and Visual Studio Compiler to build this project.
 
-## How to build this project ##
+## How to use this project/repository ##
 There are two ways to use this project:
 - One way is by directly using the binaries inside Binaries Folder
 - The other way is to build the source files inside NamedPipeClient and NamedPipeServer. The 
