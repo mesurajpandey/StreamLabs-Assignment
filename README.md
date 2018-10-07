@@ -73,7 +73,7 @@ it is in. But it will only reply the state information related to this client.
  corresponding clients
 
 
-### Create an Employee Object to NamedPipeServer by two NamedPipeClients ###
+### Create an Employee Object on NamedPipeServer from NamedPipeClient ###
 The server has a custom class (Employee Class) whose objects can be created by the clients.
 The Employee class has the following attributes:
  ```
