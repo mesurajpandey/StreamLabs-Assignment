@@ -22,7 +22,7 @@ separately.
   NamedPipeServer.exe
 ```
 ### Build NamedPipeClient
-- **Go to the NamedPipeClient Directory and cmake the NamedPipeClient project**
+- **In a new terminal, Go to the NamedPipeClient Directory and cmake the NamedPipeClient project**
 
  ```
    cd NamedPipeClient
@@ -34,8 +34,30 @@ separately.
 
 ```
   cd NamedPipeClient\NamedPipeClient\Debug
-  NamedPipeCliet
+  NamedPipeClient
 ```
+
+Now you have two processes (NamedPipeServer and NamedPipeClient) running in two different terminals.
+
+## How to Test this project ##
+  - **To use NamedPipeClient, the below instructions are provided by NamedPipeClient when you run it. **
+  
+  ```
+     *****************************
+     Enter:
+     --num to send a NUMBER
+     --inum to send a NUMBER asynchronously
+     --msg to send a MESSAGE
+     --imsg to send a MESSAGE asynchronously
+     --cobj to create an object of type employee
+     --icobj to create an object of type employee
+     --exit to terminate
+     --state to check your objects status in the server
+     --choose to access one of your object in the server
+     *******************************
+  ```
+  
+  ***Note Don't Froget to use -- when you type any of the above commands***
 
 **_NamedPipeServer_**
 
