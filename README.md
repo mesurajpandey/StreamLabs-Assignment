@@ -60,7 +60,7 @@ Now you have two processes (NamedPipeServer and NamedPipeClient) running in two 
   ***Note: Don't Froget to use -- when you type any of the above commands***
 
 Whenever you send something from NamedPipeClient to NamedPipeServer, you can check the status of your 
-server sent by sending --state command to the server. The server will reply with the state that 
+server by sending --state command to the server. The server will reply with the state that 
 it is in. But it will only reply the state information related to this client.
 
 
