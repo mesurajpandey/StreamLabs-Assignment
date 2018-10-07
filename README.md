@@ -57,7 +57,7 @@ Now you have two processes (NamedPipeServer and NamedPipeClient) running in two 
      *******************************
   ```
   
-  ***Note Don't Froget to use -- when you type any of the above commands***
+  ***Note: Don't Froget to use -- when you type any of the above commands***
 
 **_NamedPipeServer_**
 
