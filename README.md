@@ -4,14 +4,14 @@ for an Windows Operating system. You need CMake and Visual Studio Compiler to bu
 
 ## How to build this project ##
 - **Clone the repo**
-- **Go to the NamedPipeServer Directory**
+- **Go to the NamedPipeServer Directory and cmake the NamedPipeServer project**
 
  ```
    cd NamedPipeServer
    cmake .
  ```
  
-- **Open the project in Visual Studio and build the solution**
+- **A new Visual studio project will be built from cmake command. So, open this project in Visual Studio and build the solution**
 - **Go to the folder containing .exe of the project and run the NamedPipeServer**
 
 ```
@@ -19,14 +19,14 @@ for an Windows Operating system. You need CMake and Visual Studio Compiler to bu
   NamedPipeServer.exe
 ```
 
-- **Go to the NamedPipeClient Directory**
+- **Go to the NamedPipeClient Directory and cmake the NamedPipeClient project**
 
  ```
    cd NamedPipeClient
    cmake .
  ```
  
-- **Open the project in Visual Studio and build the solution**
+- **A new Visual studio project will be built from cmake command. So, open this project in Visual Studio and build the solution**
 - **Go to the folder containing .exe of the project and run the NamedPipeClient**
 
 ```
