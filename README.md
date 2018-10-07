@@ -3,6 +3,12 @@ This is an assignment provided by StreamLabs. This code is specially written
 for an Windows Operating system. You need CMake and Visual Studio Compiler to build this project.
 
 ## How to build this project ##
+There are two ways to use this project:
+- One way is by directly using the binaries inside Binaries Folder
+- The other way is to build the source files inside NamedPipeClient and NamedPipeServer. The 
+process to build the project is given below.
+
+## How to build this project ##
 There are two projects (NamedPipeClient and NamedPipeServer). You have to build those two projects 
 separately.
 ### Build NamedPipeServer
