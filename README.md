@@ -40,7 +40,7 @@ separately.
 Now you have two processes (NamedPipeServer and NamedPipeClient) running in two different terminals.
 
 ## How to Test this project ##
-  - **To use NamedPipeClient, the below instructions are provided by NamedPipeClient when you run it. **
+  - To use NamedPipeClient, the below instructions are provided by NamedPipeClient when you run it.
   
   ```
      *****************************
@@ -59,6 +59,11 @@ Now you have two processes (NamedPipeServer and NamedPipeClient) running in two 
   
   ***Note: Don't Froget to use -- when you type any of the above commands***
 
-**_NamedPipeServer_**
+Whenever you send something from NamedPipeClient to NamedPipeServer, you can check the status of 
+what you sent by sending --state command to the server. The server will reply with the state that 
+it is in. But it will only reply the state information related to this client.
 
-**_NamedPipeClient_**
+
+### Connect using two NamedPipeClients ###
+
+
