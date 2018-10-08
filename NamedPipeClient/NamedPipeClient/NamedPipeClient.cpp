@@ -176,37 +176,37 @@ int _tmain(int argc, TCHAR *argv[])
 	LPTSTR messageToSend = TEXT("state");
 	TCHAR  receivedMessage[BUFSIZE];
 	BOOL isSuccess = FALSE;
-	BOOL isAysnc = FALSE;
+	BOOL isAsync = FALSE;
 	DWORD  numBytesRead, numBytesToWrite, bytesWritten, dwMode;
 	LPTSTR pipeName = TEXT("\\\\.\\pipe\\mynamedpipe");
 
 
 	//let's read in some arguments
-	if (argc > 2) {
-		if (argc % 2 == 0) {
-			printf("Error: Some arguments are not complete\n");
-			return -1;
-		}
-		int idx = 1;
-		while (idx < argc) {
-			std::string arg = argv[idx];
-			if (strcmp(arg.c_str(), "-m") == 0) {
-				messageToSend = argv[++idx];
-				++idx;
-			}
-			else if (strcmp(arg.c_str(), "-im") == 0) {
-				messageToSend = argv[++idx];
-				isAysnc = TRUE;
-				++idx;
-			}
-			else {
-				printf("Unknown argument provided.\n");
-				return -1;
-			}
-			printf("arg: %s\n", arg.c_str());
-		}
-		// messageToSend = argv[1]; 
-	}
+	//if (argc > 2) {
+	//	if (argc % 2 == 0) {
+	//		printf("Error: Some arguments are not complete\n");
+	//		return -1;
+	//	}
+	//	int idx = 1;
+	//	while (idx < argc) {
+	//		std::string arg = argv[idx];
+	//		if (strcmp(arg.c_str(), "-m") == 0) {
+	//			messageToSend = argv[++idx];
+	//			++idx;
+	//		}
+	//		else if (strcmp(arg.c_str(), "-im") == 0) {
+	//			messageToSend = argv[++idx];
+	//			isAysnc = TRUE;
+	//			++idx;
+	//		}
+	//		else {
+	//			printf("Unknown argument provided.\n");
+	//			return -1;
+	//		}
+	//		printf("arg: %s\n", arg.c_str());
+	//	}
+	//	// messageToSend = argv[1]; 
+	//}
 
 	while (1) {
 		std::string user_input;
@@ -214,8 +214,8 @@ int _tmain(int argc, TCHAR *argv[])
 		std::string client_msg = validateUserInput(user_input);
 
 		while (1) {
-
-			if (!isAysnc) {
+			if (user_input[0] == 'i') isAsync = TRUE;
+			if (!isAsync) {
 				handleToPipe = CreateFile(pipeName, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL);
 			}
 			else {
